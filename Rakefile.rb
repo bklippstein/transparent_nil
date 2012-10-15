@@ -24,7 +24,7 @@ $hoe = Hoe.spec Kyanite.projectname do
    
   developer('Bjoern Klippstein', 'klippstein@klippstein.com')
   summary               = 'Transparent Nil'  
-  extra_deps            << ['kyanite',    '>= 0.5.17']
+  # extra_deps            << ['kyanite',    '>= 0.5.17']
 
   remote_rdoc_dir = '' # Release to root only one project  
   urls                  = [["http://#{Kyanite.github_username}.github.com/#{Kyanite.projectname}/"]]
