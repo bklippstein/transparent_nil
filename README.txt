@@ -7,17 +7,27 @@ nil values can be quite annoying. Although it is a nice error indicator but you'
 gets ugly with too many conditional statements that handle the nil case.
  
 TransparentNil defines some methods for +nil+ so nil values behave like any other object. Most of them return just nil, but some are different: 
+
+  nil.dup
+  => nil
+  
+  nil[2]
+  => nil
+
   nil.empty?
-  > true
+  => true
   
   nil << [element] 
-  > [element]
+  => [[element]]
   
   nil.size
-  > 0
+  => 0
   
   nil.split(//)
-  > []
+  => []
+  
+  nil <=> 1
+  => nil
   
 Think +nil+ als "nothing". You can ask for nil if you need to, but you don't have to do it so often.
 
