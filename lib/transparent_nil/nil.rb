@@ -1,7 +1,7 @@
 # ruby encoding: utf-8
 # ü
 
-puts 'required nil.rb'
+puts 'required TransparentNil::nil.rb'
 
 
 # == Transparent Nil 
@@ -13,7 +13,7 @@ puts 'required nil.rb'
 # Nil verhält sich damit wie alle anderen Objekte auch.
 # Man kann immer noch nach Nil fragen, wenn man es möchte, aber man muss es nicht mehr tun!
 #
-class NilClass
+module TransparentNil
 
     # Rückgabe: Array mit dem einen Element
     def <<(element);                    [element];      end     
@@ -76,6 +76,10 @@ class NilClass
     def []=(*a);                        nil;            end   
      
 
+end
+
+class NilClass
+  include TransparentNil
 end
 
 

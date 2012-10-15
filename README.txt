@@ -1,7 +1,7 @@
 
-= *Transparent Nil*
+= Transparent Nil
 
-http://bklippstein.github.com/transparent-nil/
+http://bklippstein.github.com/transparent_nil/
 
 
 == Features
@@ -22,7 +22,7 @@ http://creativecommons.org/licenses/by-sa/3.0/de/deed.en
 
 
 == Homepage
-http://bklippstein.github.com/transparent-nil/
+http://bklippstein.github.com/transparent_nil/
 
 
 == Author
