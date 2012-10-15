@@ -5,8 +5,8 @@ if $0 == __FILE__
   smart_load_path   
 end
 
-require 'kyanite/unit_test'
-require 'kyanite/general/nil'
+require 'drumherum/unit_test'
+require 'transparent_nil'
 
 # Tests for NilClass
 class TestTransparentNil < UnitTest

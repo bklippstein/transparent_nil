@@ -1,5 +1,5 @@
 
-== License For Kyanite
+== License For TransparentNil
 Creative Commons Attribution-Share Alike 3.0 Germany
 
 (cc-by-sa) http://creativecommons.org/licenses/by-sa/3.0/de/deed.en

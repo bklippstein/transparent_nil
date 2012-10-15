@@ -3,9 +3,25 @@
 
 http://bklippstein.github.com/transparent_nil/
 
+nil values can be quite annoying. Although it is a nice error indicator but you're source code 
+gets ugly with too many conditional statements that handle the nil case.
+ 
+TransparentNil defines some methods for +nil+ so nil values behave like any other object. Most of them return just nil, but some are different: 
+  nil.empty?
+  > true
+  
+  nil << [element] 
+  > [element]
+  
+  nil.size
+  > 0
+  
+  nil.split(//)
+  > []
+  
+Think +nil+ als "nothing". You can ask for nil if you need to, but you don't have to do it so often.
 
-== Features
-* Transparent nil Handling, see NilClass
+The Kyanite gem extends the usage of nil.
 
 
 

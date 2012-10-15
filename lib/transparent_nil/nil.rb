@@ -1,18 +1,7 @@
 # ruby encoding: utf-8
 # ü
 
-puts 'required TransparentNil::nil.rb'
 
-
-# == Transparent Nil 
-# Nil nervt oft. Zwar ist es ein schöner Fehlerindikator 
-# (meist läuft irgendwas schief wenn man es unerwartet mit nil zu tun hat)
-# aber man verunstaltet seinen Quellcode schnell mit Fallunterscheidungen, die den nil-Fall behandeln.
-# 
-# In Kyanite werden daher zahlreiche Methoden für nil definiert. 
-# Nil verhält sich damit wie alle anderen Objekte auch.
-# Man kann immer noch nach Nil fragen, wenn man es möchte, aber man muss es nicht mehr tun!
-#
 module TransparentNil
 
     # Rückgabe: Array mit dem einen Element

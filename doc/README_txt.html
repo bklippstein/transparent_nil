@@ -4,7 +4,7 @@
 <head>
 <meta content="text/html; charset=utf8" http-equiv="Content-Type">
 
-<title>README - Transparent_nil 0.1.2</title>
+<title>README - TransparentNil 0.1.4</title>
 
 <link type="text/css" media="screen" href="./rdoc.css" rel="stylesheet">
 
@@ -80,10 +80,28 @@
 <p><a
 href="http://bklippstein.github.com/transparent_nil/">bklippstein.github.com/transparent_nil/</a></p>
 
-<h2 id="label-Features">Features</h2>
-<ul><li>
-<p>Transparent nil Handling, see <a href="NilClass.html">NilClass</a></p>
-</li></ul>
+<p>nil values can be quite annoying. Although it is a nice error indicator but
+you’re source code  gets ugly with too many conditional statements that
+handle the nil case.   <a href="TransparentNil.html">TransparentNil</a>
+defines some methods for <code>nil</code> so nil values behave like any
+other object. Most of them return just nil, but some are different:</p>
+
+<pre>nil.empty?
+&gt; true
+
+nil &lt;&lt; [element] 
+&gt; [element]
+
+nil.size
+&gt; 0
+
+nil.split(//)
+&gt; []</pre>
+
+<p>Think <code>nil</code> als “nothing”. You can ask for nil if you need to,
+but you don’t have to do it so often.</p>
+
+<p>The Kyanite gem extends the usage of nil.</p>
 
 <h2 id="label-Usage">Usage</h2>
 

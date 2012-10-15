@@ -6,11 +6,11 @@ else
   $:.unshift(File.dirname(__FILE__)) 
 end
 
-puts 'required transparent_nil.rb'
+puts 'Using TransparentNil'
 
 module TransparentNil #:nodoc
 
-  VERSION = '0.1.2'
+  VERSION = '0.1.4'
   
 end
 

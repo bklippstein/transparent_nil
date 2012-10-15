@@ -2,12 +2,12 @@
 
 require 'kyanite/smart_load_path'
 smart_load_path  
-require 'kyanite/hoe'
-require 'kyanite/string'
-Kyanite.projectname = File.dirname(__FILE__).split("/")[-1].strip   # Name des Projekt-Stammverzeichnisses
-Kyanite.github_username = 'bklippstein'
+
+require 'drumherum'
+Drumherum.project_name = File.dirname(__FILE__).split("/")[-1].strip   # Name des Projekt-Stammverzeichnisses
+Drumherum.github_username = 'bklippstein'
 require 'rdoc/task'
-require 'kyanite/rake'
+require 'drumherum/rake'
 
 require 'transparent_nil'
 
@@ -18,16 +18,16 @@ require 'transparent_nil'
 #  
 # http://nubyonrails.com/articles/tutorial-publishing-rubygems-with-hoe
 #
-$hoe = Hoe.spec Kyanite.projectname do 
+$hoe = Hoe.spec Drumherum.project_name do 
 
   # self.rubyforge_name = 'yourgemx' # if different than 'yourgem'
    
   developer('Bjoern Klippstein', 'klippstein@klippstein.com')
-  summary               = 'Transparent Nil'  
-  # extra_deps            << ['kyanite',    '>= 0.5.17']
+  summary               = 'Nil values can be quite annoying. TransparentNil defines some methods for +nil+ so nil values behave like any other object.'  
+  extra_dev_deps        << ['drumherum',    '>= 0.1.0']
 
   remote_rdoc_dir = '' # Release to root only one project  
-  urls                  = [["http://#{Kyanite.github_username}.github.com/#{Kyanite.projectname}/"]]
+  urls                  = [["http://#{Drumherum.github_username}.github.com/#{Drumherum.project_name}/"]]
 
                     
 end
@@ -51,7 +51,7 @@ remove_task 'docs'
 desc "generate RDoc documentation"
 Rake::RDocTask.new(:docs) do |rd| 
 
-    rd.title    = "#{Kyanite.projectname.capitalize} #{Kyanite.projectname.to_class.const_get('VERSION')}"
+    rd.title    = "#{Drumherum.project_class.to_s} #{Drumherum.project_version}"
 
     rd.rdoc_dir = 'doc'   
     rd.rdoc_files.include('lib/**/*.rb')
