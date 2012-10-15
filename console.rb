@@ -2,8 +2,6 @@
 # File: script/console
 irb = RUBY_PLATFORM =~ /(:?mswin|mingw)/ ? 'irb.bat' : 'irb'
 libs =  " -r irb/completion"
-libs <<  " -r #{File.dirname(__FILE__) + '/init.rb'}"
-
-puts "Welcome to Transparent Nil gem"
-
+initfile = File.join(File.dirname(__FILE__),  'init.rb' )  
+libs <<  " -r #{initfile}"
 exec "#{irb} #{libs} --simple-prompt --noreadline"

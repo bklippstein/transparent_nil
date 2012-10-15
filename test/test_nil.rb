@@ -1,8 +1,8 @@
 # ruby encoding: utf-8
 # ü
 if $0 == __FILE__ 
-  require 'kyanite/smart_load_path.rb' 
-  smart_load_path   
+  require 'drumherum'
+  smart_init 
 end
 
 require 'drumherum/unit_test'

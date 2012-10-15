@@ -5,6 +5,7 @@ License.txt
 Manifest.txt
 Rakefile.rb
 README.txt
+version.rb
 lib/transparent_nil.rb
 lib/transparent_nil/nil.rb
 test/_start_all.rb

@@ -1,14 +1,12 @@
 # ruby encoding: utf-8
 
-require 'kyanite/smart_load_path'
-smart_load_path  
-
 require 'drumherum'
-Drumherum.project_name = File.dirname(__FILE__).split("/")[-1].strip   # Name des Projekt-Stammverzeichnisses
-Drumherum.github_username = 'bklippstein'
+smart_init
+require 'version' 
 require 'rdoc/task'
 require 'drumherum/rake'
 
+Drumherum.github_username = 'bklippstein'
 require 'transparent_nil'
 
 
