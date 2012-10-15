@@ -3,6 +3,7 @@
 require 'kyanite/smart_load_path'
 smart_load_path  
 require 'kyanite/hoe'
+require 'kyanite/string'
 Kyanite.projectname = File.dirname(__FILE__).split("/")[-1].strip   # Name des Projekt-Stammverzeichnisses
 Kyanite.github_username = 'bklippstein'
 require 'rdoc/task'
@@ -50,8 +51,7 @@ remove_task 'docs'
 desc "generate RDoc documentation"
 Rake::RDocTask.new(:docs) do |rd| 
 
-    # rd.title    = "#{Kyanite.projectname.capitalize} #{Kyanite.projectname.to_class.const_get('VERSION')}"
-    rd.title    = "#{Kyanite.projectname.capitalize} "
+    rd.title    = "#{Kyanite.projectname.capitalize} #{Kyanite.projectname.to_class.const_get('VERSION')}"
 
     rd.rdoc_dir = 'doc'   
     rd.rdoc_files.include('lib/**/*.rb')
