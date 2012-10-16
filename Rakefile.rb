@@ -10,8 +10,6 @@ Drumherum.github_username = 'bklippstein'
 require 'transparent_nil'
 
 
-
-
 #  ----------------------------------------------------------------------------------------------
 #  Hoe
 #  
@@ -26,7 +24,7 @@ $hoe = Hoe.spec Drumherum.project_name do
   extra_dev_deps        << ['drumherum',    '>= 0.1.0']
 
   remote_rdoc_dir = '' # Release to root only one project  
-  urls                  = [["http://#{Drumherum.github_username}.github.com/#{Drumherum.project_name}/"]]
+  urls                  = [[Drumherum.url_docs]]
 
                     
 end
@@ -40,9 +38,7 @@ end
 #  ----------------------------------------------------------------------------------------------
 #  Local Tasks
 #  
-
-remove_task 'ridocs'
-remove_task 'rdoc' 
+ 
 remove_task 'audit' 
 remove_task 'dcov' 
 remove_task 'debug_email' 
@@ -52,6 +48,10 @@ remove_task 'deps:email'
 remove_task 'install_gem'
 remove_task 'multi' 
 remove_task 'newb' 
+remove_task 'publish_docs' 
+remove_task 'rdoc'
+remove_task 'ridocs'
+
 #Dir['tasks/**/*.rake'].each { |t| load t }  
   
   

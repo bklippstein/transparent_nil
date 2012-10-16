@@ -1,0 +1,142 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>
+  File: README
+  
+    &mdash; Documentation by YARD 0.8.2.1
+  
+</title>
+
+  <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" charset="utf-8" />
+
+  <link rel="stylesheet" href="css/common.css" type="text/css" media="screen" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  hasFrames = window.top.frames.main ? true : false;
+  relpath = '';
+  framesUrl = "frames.html#!" + escape(window.location.href);
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div id="header">
+      <div id="menu">
+  
+    <a href="_index.html">Index</a> &raquo; 
+    <span class="title">File: README</span>
+  
+
+  <div class="noframes"><span class="title">(</span><a href="." target="_top">no frames</a><span class="title">)</span></div>
+</div>
+
+      <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="class_list.html">
+      Class List
+    </a>
+  
+    <a class="full_list_link" id="method_list_link"
+        href="method_list.html">
+      Method List
+    </a>
+  
+    <a class="full_list_link" id="file_list_link"
+        href="file_list.html">
+      File List
+    </a>
+  
+</div>
+      <div class="clear"></div>
+    </div>
+
+    <iframe id="search_frame"></iframe>
+
+    <div id="content"><div id='filecontents'>
+<h1>Transparent Nil</h1>
+
+<p><a
+href="http://bklippstein.github.com/transparent_nil">bklippstein.github.com/transparent_nil</a>/</p>
+
+<p>nil values can be quite annoying. Although it is a nice error indicator but
+you’re source code  gets ugly with too many conditional statements that
+handle the nil case.   TransparentNil defines some methods for <tt>nil</tt>
+so nil values behave like any other object. Most of them return just nil,
+but some are different:</p>
+
+<pre class="code ruby"><code>nil.dup
+=&gt; nil
+
+nil[2]
+=&gt; nil
+
+nil.empty?
+=&gt; true
+
+nil &lt;&lt; [element] 
+=&gt; [[element]]
+
+nil.size
+=&gt; 0
+
+nil.split(//)
+=&gt; []
+
+nil &lt;=&gt; 1
+=&gt; nil</code></pre>
+
+<p>Think <tt>nil</tt> als “nothing”. You can ask for nil if you need to, but
+you don’t have to do it so often.</p>
+
+<p>The Kyanite gem extends the usage of nil.</p>
+
+<h2>Usage</h2>
+
+<pre class="code ruby"><code><span class='id identifier rubyid_require'>require</span> <span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>transparent_nil</span><span class='tstring_end'>'</span></span></code></pre>
+
+<h2>License</h2>
+
+<p>cc-by-sa</p>
+
+<p>Creative Commons Attribution-Share Alike 3.0 Germany</p>
+
+<p><a
+href="http://creativecommons.org/licenses/by-sa/3.0/de/deed.en">creativecommons.org/licenses/by-sa/3.0/de/deed.en</a></p>
+
+<h2>Homepage</h2>
+
+<p><a
+href="http://bklippstein.github.com/transparent_nil">bklippstein.github.com/transparent_nil</a>/</p>
+
+<h2>Author</h2>
+
+<p>Björn Klippstein</p>
+
+<h2>Disclaimer</h2>
+
+<p>THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+DEALINGS IN THE SOFTWARE.</p>
+</div></div>
+
+    <div id="footer">
+  Generated on Tue Oct 16 12:15:15 2012 by
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.8.2.1 (ruby-1.9.3).
+</div>
+
+  </body>
+</html>
