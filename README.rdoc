@@ -1,7 +1,13 @@
+
 = Transparent Nil
+http://bklippstein.github.com/transparent_nil/frames.html
 
-http://bklippstein.github.com/transparent_nil/
+* *Documentation*: {http://bklippstein.github.com/transparent_nil/frames.html github.com/transparent_nil}
+* *Source* *code*: {https://github.com/bklippstein/transparent_nil github.com/bklippstein/transparent_nil}
+* *License*: {http://creativecommons.org/licenses/by-sa/3.0/de/deed.en cc-by-sa Creative Commons Attribution-Share Alike 3.0 Germany}
+* *Autor*: {mailto:klippstein@klippstein.com Björn Klippstein}
 
+== Summary
 nil values can be quite annoying. Although it is a nice error indicator but you're source code 
 gets ugly with too many conditional statements that handle the nil case.
  
@@ -38,20 +44,6 @@ The Kyanite gem extends the usage of nil.
   require 'transparent_nil'             
 
 
-== License
-cc-by-sa
-
-Creative Commons Attribution-Share Alike 3.0 Germany
-
-http://creativecommons.org/licenses/by-sa/3.0/de/deed.en
-
-
-== Homepage
-http://bklippstein.github.com/transparent_nil/
-
-
-== Author
-Björn Klippstein 
 
 
 == Disclaimer
