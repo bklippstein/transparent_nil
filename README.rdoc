@@ -1,4 +1,3 @@
-
 = Transparent Nil
 
 http://bklippstein.github.com/transparent_nil/

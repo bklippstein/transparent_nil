@@ -4,31 +4,35 @@
 
 module TransparentNil
 
-    # Rückgabe: Array mit dem einen Element
+    # @group Return something
+
+    # @return [Array] one element Array
     def <<(element);                    [element];      end     
     
-    # Rückgabe: true
+    # @return [true] 
     def empty?;                         true;           end 
-
-    # Rückgabe: 0    
-    def length;                         0;              end
     
-    # Rückgabe: 0        
-    def size;                           0;              end
-    
-    # Rückgabe: 0        
-    def count(*a);                      0;              end
-    
-    # Rückgabe: leeres Array        
-    def split(*a);                      [];             end
-    
-    # Rückgabe: false        
+    # @return [false]     
     def =~(other);                      false;          end
     
-    # Rückgabe: false     
+    # @return [false]       
     # redundante Definition!    
-    def include?(*a);                   false;          end    
+    def include?(*a);                   false;          end       
 
+    # @return [0] 
+    def length;                         0;              end
+    
+    # @return [0]      
+    def size;                           0;              end
+    
+    # @return [0]       
+    def count(*a);                      0;              end
+    
+    # @return [Array] empty Array       
+    def split(*a);                      [];             end
+    
+ 
+    # @group Return nil
 
     def -(other);                       nil;            end    
     def +(other);                       nil;            end    

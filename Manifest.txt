@@ -1,10 +1,11 @@
+.yardopts
 console.rb
-History.txt
+History.rdoc
 init.rb
-License.txt
+License.rdoc
 Manifest.txt
 Rakefile.rb
-README.txt
+README.rdoc
 version.rb
 lib/transparent_nil.rb
 lib/transparent_nil/nil.rb

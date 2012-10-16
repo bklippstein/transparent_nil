@@ -3,11 +3,12 @@
 require 'drumherum'
 smart_init
 require 'version' 
-require 'rdoc/task'
+require 'yard'
 require 'drumherum/rake'
-
+YARD::Rake::YardocTask.new
 Drumherum.github_username = 'bklippstein'
 require 'transparent_nil'
+
 
 
 
@@ -34,38 +35,6 @@ end
 # pp $hoe
 
 
-  
-  
-  
-#  ----------------------------------------------------------------------------------------------
-#  Documentation
-#  
-# http://rubeh.tumblr.com/post/27622544/rake-rdoctask-with-all-of-the-options-stubbed-out
-# http://www.java2s.com/Code/Ruby/Language-Basics/RDocoptionsareusedlikethisrdocoptionsnames.htm
-#   
-
-remove_task 'docs' 
-
-desc "generate RDoc documentation"
-Rake::RDocTask.new(:docs) do |rd| 
-
-    rd.title    = "#{Drumherum.project_class.to_s} #{Drumherum.project_version}"
-
-    rd.rdoc_dir = 'doc'   
-    rd.rdoc_files.include('lib/**/*.rb')
-    # rd.rdoc_files.include('test/**/test_*.rb')
-    rd.rdoc_files.include('README.txt', 'License.txt', 'History.txt' )
-
-    rd.options += [
-        '--tab-width', '4',
-        '--main', 'README.txt',
-        '--show-hash',        # A name of the form #name in a comment is a possible hyperlink to an instance method name. When displayed, the # is removed unless this option is specified.
-        '--line-numbers',
-        '--all',
-        '--charset=utf8'      
-      ]      
-      
-end
 
   
 #  ----------------------------------------------------------------------------------------------

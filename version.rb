@@ -1,11 +1,7 @@
 
 module TransparentNil  
   
-    VERSION = '0.1.7' # TransparentNil-Version  
+    VERSION = '0.1.8' 
     
-    
-    # puts "VERSION=#{VERSION}"
-
-  
 end
 

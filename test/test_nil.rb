@@ -4,7 +4,6 @@ if $0 == __FILE__
   require 'drumherum'
   smart_init 
 end
-
 require 'drumherum/unit_test'
 require 'transparent_nil'
 

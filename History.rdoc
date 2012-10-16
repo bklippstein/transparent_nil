@@ -1,3 +1,5 @@
+== 0.1.8 2012-10-16
+* yard documentation
 
 == 0.1.7 2012-10-15
 * smart_init integrated

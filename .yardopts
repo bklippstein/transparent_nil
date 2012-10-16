@@ -1,0 +1,7 @@
+--charset utf-8
+--readme README.rdoc
+--embed-mixins
+-
+README.rdoc
+History.rdoc
+version.rb

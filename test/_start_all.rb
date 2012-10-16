@@ -1,5 +1,4 @@
 # ruby encoding: utf-8
-#!/usr/bin/env ruby
 # 
 #	Führt alle Tests aus
 #
