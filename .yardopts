@@ -1,6 +1,7 @@
 --charset utf-8
 --readme README.rdoc
 --embed-mixins
+--default-return nil
 -
 README.rdoc
 History.rdoc
