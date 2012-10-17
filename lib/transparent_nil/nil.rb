@@ -6,7 +6,7 @@ module TransparentNil
 
     # @group Return something
 
-    # @return [Array] one element Array
+    # @return [Array] one element array
     def <<(element);                    [element];      end     
     
     # @return [true] 
@@ -54,8 +54,7 @@ module TransparentNil
     def join;                           nil;            end    
     def keys;                           nil;            end    
     def pop(*a);                        nil;            end 
-    def push(*a);                       nil;            end    
-    #def split(*a);                      nil;            end   
+    def push(*a);                       nil;            end     
     def strip!(*a);                     nil;            end   
     def strip(*a);                      nil;            end   
     def sub(*a);                        nil;            end      

@@ -1,3 +1,16 @@
+
+
+/*klippstein*/
+function viewSource() {
+       $('.toggleSource').parent().nextAll('.source_code').slideDown(100);
+       $('.toggleSource').text("Hide source");
+    }
+
+
+    
+    
+    
+
 function createSourceLinks() {
     $('.method_details_list .source_code').
         before("<span class='showSource'>[<a href='#' class='toggleSource'>View source</a>]</span>");
@@ -203,6 +216,11 @@ function generateTOC() {
 
 $(framesInit);
 $(createSourceLinks);
+
+
+$(viewSource); /*klippstein*/
+
+
 $(createDefineLinks);
 $(createFullTreeLinks);
 $(fixBoxInfoHeights);
