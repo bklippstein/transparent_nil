@@ -1,9 +1,9 @@
+--plugin yard_klippstein_template
 --charset utf-8
 --readme README.rdoc
 --embed-mixins
 --no-private
 --hide-void-return
---template-path yard-template
 --default-return nil
 -
 README.rdoc
