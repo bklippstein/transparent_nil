@@ -15,16 +15,16 @@ require 'transparent_nil'
 #  
 # http://nubyonrails.com/articles/tutorial-publishing-rubygems-with-hoe
 #
-$hoe = Hoe.spec Drumherum.project_name do 
+$hoe = Hoe.spec Drumherum.project_name do |p|
+ 
+  p.summary               = 'Nil values can be quite annoying. TransparentNil defines some methods for +nil+ so nil values behave like any other object.'  
+  p.description           = 'Nil values can be quite annoying. TransparentNil defines some methods for +nil+ so nil values behave like any other object.'  
+  p.extra_dev_deps        << ['drumherum',                '>= 0.1.27']
+  p.extra_dev_deps        << ['yard_klippstein_template', '>= 0.0.20']  
 
-  # self.rubyforge_name = 'yourgemx' # if different than 'yourgem'
-   
-  developer('Bjoern Klippstein', 'klippstein@klippstein.com')
-  summary               = 'Nil values can be quite annoying. TransparentNil defines some methods for +nil+ so nil values behave like any other object.'  
-  extra_dev_deps        << ['drumherum',    '>= 0.1.0']
-
-  remote_rdoc_dir = '' # Release to root only one project  
-  urls                  = [[Drumherum.url_docs], [Drumherum.url_source]]
+  p.developer('Bjoern Klippstein', 'klippstein@klippstein.com')  
+  p.remote_rdoc_dir = '' # Release to root only one project  
+  p.urls                  = [Drumherum.url_docs, Drumherum.url_source]
 
                     
 end
