@@ -1,19 +1,102 @@
 
+  body {
+      margin: 0;
+      padding: 0; 
+  }
 
-  /* Headlines */
+  #header {
+      padding: 10px 20px 10px 20px;
+      background-color: #EEEEEE;
+      margin-bottom: 10px;
+  }
+
+  #body {
+      padding: 0 20px 20px 20px;
+  }
+  
+  #toc {
+      background-color: #EEEEEE;  
+      border: none;
+  }
+  
+  #footer {
+      border-top: none;
+      padding: 10px 20px 10px 20px;
+      background-color: #EEEEEE;
+      margin-top: 10px;
+  }  
+
+  
+  /* =========================== Box =========================== */
+    
+  #filecontents dl.box, dl.box {
+      display: table;
+      border-top: 1px #c6c6c6 dotted;
+      margin: 0;  
+      padding-left:0px;
+      width: 100%;   
+  }
+
+  #filecontents div.box-additions dl.box, div.box-additions dl.box {
+      border-top: none;
+  }
+
+  #filecontents dl.box div.row, dl.box div.row {
+        display: table-row;  
+        margin: 0px;
+        padding: 2px 0px 2px 0px;      
+        line-height:1.5em;
+    }
+
+  #filecontents dl.box dt, dl.box dt {
+        display: table-cell;  
+        background: none !important;
+        border: 0px ;
+        border-bottom: 1px #c6c6c6 dotted !important;    
+        white-space:nowrap;
+        font-weight: normal;
+        padding: 1px 10px;      
+        width: 25%;   
+        overflow: visible;      
+        text-align: left;    
+        float: none;
+  }
+
+  #filecontents dl.box dd, dl.box dd {
+        display: table-cell;        
+        background: none !important;  
+        border: 0px ;      
+        border-bottom: 1px #c6c6c6 dotted !important;       
+        margin:0;
+        padding: 1px 0px 1px 3px;    
+        float: none;  
+        width: 74%;   
+  }
+
+  /* =========================== Headlines =========================== */
+    
+  h1 {
+      border-top: none;
+  }  
   
   h2 {
     margin: 3em 0 0.5em 0;  
-    font-size: 1.7em;      
-    border-top: 1px #555 solid;
+    font-size: 1.5em;      
+    /*border-top: 4px #EEEEEE solid;*/
     border-bottom: 0px;
     padding: 10px 0 3px 0;  /*fuer die Linie */
   }
   
   .docstring h3 {
     margin: 1.5em 0 0.3em 0; 
-    font-size: 1.2em;  
+    font-size: 1.0em;  
   }  
+  
+  
+  .docstring h4 {
+    margin: 1.3em 0 0.2em 0; 
+    font-size: 1.0em;  
+  }    
 
   p.signature, h3.signature {
       font-family: Monaco,Consolas,Courier,monospace;
@@ -32,8 +115,7 @@
   }
 
 
-
-  /* method summary: show as table */
+  /* =========================== method summary: show as table =========================== */
 
   ul.summary  {
     display: table;
@@ -61,7 +143,9 @@
       border: 0px;
       padding: 1px 10px;
       border-bottom: 1px #c6c6c6 dotted;    
-      white-space:nowrap;      
+      white-space:nowrap;  
+      width: 25%;   
+      overflow: visible;           
   }
 
   .summary .summary_desc {
@@ -69,17 +153,18 @@
       margin:0px;
       border-bottom: 1px #c6c6c6 dotted;
       font-family: "Lucida Sans","Lucida Grande",Verdana,Arial,sans-serif;
-        font-size: 13px;    
+      font-size: 13px;   
+      width: 74%;         
   }
 
   p.signature, h3.signature {
-      background: none repeat scroll 0 0 #FAEECC;
-      border: 0;
-
+      background: none;
+      border: none;
+      border-top: 1px #c6c6c6 dotted       
   }
 
-
-  /* method details */
+  
+  /* =========================== method details =========================== */ 
   
   .note.returns_void {
       display :none;
@@ -97,12 +182,12 @@
       display: table !important;
   }
 
-  /* rdoc def list as table */
+  /* =========================== rdoc def list: show as table =========================== */  
   
   dl.rdoc-list {
       display: table;
-      border: none;
-      border-top: 1px #c6c6c6 dotted;
+      border: none !important;
+      border-top: 1px #c6c6c6 dotted !important;
       padding-left:0px;
       margin: 2px 0 5px 0;      
       width: 100%;      
@@ -118,39 +203,91 @@
   
   dl.rdoc-list dt {
       display: table-cell;  
-      background: none;
+      background: none !important;
       border: 0px;
-      padding: 1px 10px;
+      padding: 1px 10px !important;
       border-bottom: 1px #c6c6c6 dotted;    
       white-space:nowrap;   
-      font-family:monospace;   
       font-weight: normal !important;   
-
+      width: 25%;   
+      overflow: visible;        
   }
   
   dl.rdoc-list dd {
       display: table-cell;        
-      background: white;  
+      background: none;  
       border-bottom: 1px #c6c6c6 dotted;       
-      margin:0;
-      padding: 1px 0px 1px 3px;        
+      margin:0 !important;
+      padding: 1px 0px 1px 3px !important;   
+      width: 74%;   
   }    
   
+  
+  /* =========================== Constants: show as table =========================== */  
+  
+  dl.constants {
+      display: table;
+      border: none !important;
+      border-top: 1px #c6c6c6 dotted !important;
+      padding-left:0px;
+      margin: 2px 0 5px 0;      
+      width: 100%;    
+  } 
+
+  div.constants-dl-row {
+      display: table-row;  
+      margin: 0px;
+      padding: 2px 0px 2px 0px;      
+      line-height:1.5em;
+  }  
+
+  dl.constants dt {
+      display: table-cell;  
+      background: none !important;
+      border: 0px;
+      padding: 1px 10px !important;
+      border-bottom: 1px #c6c6c6 dotted;    
+      white-space:nowrap;   
+      font-weight: normal !important;   
+      font-family: monospace;      
+      width: 25%;   
+      overflow: visible;    
+  }  
+
+  dl.constants dd {
+      display: table-cell;        
+      background: none;  
+      border-bottom: 1px #c6c6c6 dotted;   
+      font-family: monospace;
+      margin:0 !important;
+      padding: 1px 0px 1px 3px !important;   
+      width: 74%;  
+  }
+  
+  
+
+  pre.code {
+      margin:0;
+  }  
+    
+    
+  /* =========================== Misc =========================== */    
+  
   /* bullet lists */
-  .docstring ul {
+  .docstring ul, .docstring ol  {
     margin: 2px 0 5px 0;
   }
   
   
+  /* monospace font*/  
+  .object_link{
+      font-family: monospace;
+  }  
   
-  
-  
-  
-  
-  
-  
-  
-  
+
+  div.docstring, p.docstring {
+      margin: 2em 6em 0 0;
+  }
   
   
   
