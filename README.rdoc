@@ -40,7 +40,7 @@ The Kyanite gem extends the usage of nil.
   
 == More Info
 * *Documentation*: {http://bklippstein.github.com/transparent_nil/frames.html github.com/transparent_nil}
-* *Source* *code*: {https://github.com/bklippstein/transparent_nil github.com/bklippstein/transparent_nil}
+* *Source* *code*: {https://github.com/bklippstein/transparent_nil github.com/bklippstein}
 * *License*: {http://creativecommons.org/licenses/by-sa/3.0/de/deed.en cc-by-sa Creative Commons Attribution-Share Alike 3.0 Germany}
 * *Autor*: {mailto:klippstein@klippstein.com Björn Klippstein}
 

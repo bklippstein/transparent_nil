@@ -6,29 +6,36 @@ module TransparentNil
 
     # @group Return something
 
+    # Returns one element array
     # @return [Array] one element array
     def <<(element);                    [element];      end     
     
-    # @return [true] 
+    # +true+
+    # @return [Boolean] 
     def empty?;                         true;           end 
     
-    # @return [false]     
+    # +false+
+    # @return [Boolean]      
     def =~(other);                      false;          end
     
-    # @return [false]       
-    # redundante Definition!    
+    # +false+. Redundante Definition!
+    # @return [Boolean] 
     def include?(*a);                   false;          end       
 
-    # @return [0] 
+    # +0+.
+    # @return [Integer] 
     def length;                         0;              end
     
-    # @return [0]      
+    # +0+.
+    # @return [Integer]   
     def size;                           0;              end
     
-    # @return [0]       
+    # +0+.
+    # @return [Integer]       
     def count(*a);                      0;              end
     
-    # @return [Array] empty Array       
+    # Empty Array.
+    # @return [Array]        
     def split(*a);                      [];             end
     
  
@@ -61,12 +68,14 @@ module TransparentNil
     def to_i;                           nil;            end  
     def to_integer;                     nil;            end  
     def to_nil;                         nil;            end  
+    def to_nil_if(*a);                  nil;            end  
+    def to_nil_unless(*a);              nil;            end  
     def to_sym;                         nil;            end  
     def uniq!;                          nil;            end   
     def uniq;                           nil;            end   
     def [](*a);                         nil;            end
     def []=(*a);                        nil;            end   
-     
+    def substract(other);               nil;            end     
 
 end
 

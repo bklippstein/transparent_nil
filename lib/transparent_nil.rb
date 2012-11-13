@@ -3,5 +3,6 @@
 
 puts 'Using TransparentNil'
 require 'transparent_nil/nil'
+require 'transparent_nil/numeric'
 
  

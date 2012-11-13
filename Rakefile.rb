@@ -24,7 +24,7 @@ $hoe = Hoe.spec Drumherum.project_name do |p|
 
   p.developer('Bjoern Klippstein', 'klippstein@klippstein.com')  
   p.remote_rdoc_dir = '' # Release to root only one project  
-  p.urls                  = [Drumherum.url_docs, Drumherum.url_source]
+  p.urls                  = [Drumherum.url_docs, 'https://github.com/bklippstein']
 
                     
 end
