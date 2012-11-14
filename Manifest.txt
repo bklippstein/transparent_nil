@@ -8,8 +8,8 @@ Rakefile.rb
 README.rdoc
 version.rb
 lib/transparent_nil.rb
+lib/transparent_nil/_test_all.rb
 lib/transparent_nil/nil.rb
 lib/transparent_nil/numeric.rb
 lib/transparent_nil/object.rb
-test/_start_all.rb
 test/test_nil.rb
